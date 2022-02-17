@@ -445,5 +445,6 @@ body {
     }
     .navbar-toggler{
         left: -9rem;
+        top: 3px;
     }
 }
