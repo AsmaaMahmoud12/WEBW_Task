@@ -229,6 +229,13 @@ body {
     color: var(--light-grey);;
 }
 
+.carousel-item{
+    display: none;
+}
+.carousel-item .active{
+    display: block;
+}
+
 .carousel-indicators{
     padding-bottom: 10px;
 }
