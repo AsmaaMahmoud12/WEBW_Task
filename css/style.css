@@ -441,7 +441,7 @@ body {
     height: 51px;
     border-radius: 25px;
     width: 280px;
-    padding-right: 38px;
+    padding-right: 95px;
 }
 
 .footer-logo{
@@ -522,6 +522,9 @@ body {
     .card{
         padding: 0 20px;
     }
+    .email-input {
+        padding-right: 38px;
+    }
 }
 
 
@@ -533,7 +536,7 @@ body {
         min-width: 280px;
     }
     .subscribe-btn{
-        top: 6.85rem;
+        top: 6.87rem;
     }
     .card-body p:nth-child(3) {
         font-size: 14px;
@@ -553,7 +556,10 @@ body {
     }
     .vertical-line {
         margin: 60% 51px;
-    }   
+    }
+    .email-input {
+        padding-right: 120px;
+    }
 }
 
 @media screen and (max-width: 767px) {
