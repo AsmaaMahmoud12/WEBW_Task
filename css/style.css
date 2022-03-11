@@ -555,6 +555,9 @@ body {
 }
 
 @media screen and (max-width:992px) {
+    .navbar-toggler {
+        top: 11px;
+    }
     .bullets{
         left: 0.5rem;
     }
@@ -597,9 +600,6 @@ body {
     }
     .header-text p:nth-child(2){
         font-size: 15px
-    }
-    .navbar-toggler{
-        top: 11px;
     }
     .bullets{
         left: 1rem;
