@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,30 +15,35 @@
     <div class="header-bg-img" id="navbar">
         <div class="container header-container">
             <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand logo" href="/">ST<img src="imgs/v_letter.png">DY</a>
-                <button class="navbar-toggler navbar-light" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse navbar-menu"  id="navbarText" >
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link button browser" href="#browser">Browser <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link button" href="#bootcamps">Bootcamps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link button" href="#howitworks">How It Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link button" href="#testemonial">Testemonial</a>
-                    </li>
-                </ul>
+                <div class="navbar-flex">
+                    <a class="navbar-brand logo" href="/">ST<img src="imgs/v_letter.png">DY</a>
+                    <div>
+                        <button class="navbar-toggler navbar-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbar-menu"  id="navbarText" >
+                        <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link button browser" href="#browser">Browser <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link button" href="#bootcamps">Bootcamps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link button" href="#howitworks">How It Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link button" href="#testemonial">Testemonial</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <a class="navbar-brand about " href="#aboutus">About us</a>
                 </div>
-                <a class="navbar-brand about " href="#aboutus">About us</a>
+
+            </div>
             </nav>
             <div class="row">
                 <div class="col-md-5 header-text">
@@ -62,14 +68,14 @@
         <div  class="col-md-1"></div>
     </div>
     <div class="row justify-content-center learn-about-container "id="browser">
-        <div class="col-md-5 features-text">
+        <div class="col-11 col-md-5 features-text">
             <hr class="icons">
             <p>The best business solution for you</p>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 Stet clita kasd gubergren, no sea takimata</p>
             <p>Learn About Our Success <img src="imgs/arrow.svg" alt=""></p>
         </div>
-        <div class="col-9 col-md-7">
+        <div class="col-11 col-md-7">
             <div class="row justify-content-center" >
                 <div class="col-12 col-md-4">
                     <img class="icon-img" src="imgs/icon.svg" alt="icon">
@@ -105,7 +111,7 @@
             <div class="left-content col-md-7">
                 <img class="dashboard" src="imgs/dashboard.svg" alt="dashboard">
             </div>
-            <div class="right-content col-md-5 dashboard-text">
+            <div class="right-content col-12 col-md-5 dashboard-text">
                 <hr class="icons">
                 <p>Best Platform for the Technological Era</p>
                 <p class="logo">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.Stet clita kasd gubergren, no sea takimata</p>
@@ -168,7 +174,7 @@
                         <span class="dot">1</span>
                         <div class="row vertical-line"></div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 market-text">
                         <p> Market Research</p>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                     </div>
@@ -178,7 +184,7 @@
                         <span class="dot">2</span>
                         <div class="row vertical-line"></div>
                     </div>
-                    <div class="col-6 ">
+                    <div class="col-6 market-text">
                         <p>Market Research</p>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                     </div>
@@ -187,7 +193,7 @@
                     <div class="col-6 col-md-4 bullets ">
                         <span class="dot">3</span>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 market-text">
                         <p>Market Research</p>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                     </div>
@@ -201,7 +207,7 @@
                 <p>Don't Just Take our Word for it!</p>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center prices-container">
             <div class="col-4 col-md-2 ">
                 <div class="row price-info">
                     <p>570</p>
@@ -220,7 +226,7 @@
                 </div>
             </div>
             <div class="col-md-1"></div>
-            <div class="col-4 col-md-2">
+            <div class="col-4 col-md-3">
                 <div class="row price-info">
                     <p>570</p>
                 </div>
@@ -241,7 +247,7 @@
     </div>
     <div class="container aboutus" id="aboutus" >
         <div class="row justify-content-md-center">
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-md-6">
                 <div id="cardCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-interval="false" >
                     <div class="carousel-inner" >
                         <div class="carousel-item active">
@@ -285,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 aboutus-info">
+            <div class="col-12 col-md-5 aboutus-info">
                 <p>Grow Your Business and Join Our Happy Users</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br>
                     Stet clita kasd gubergren, no sea takimata sanctus est Lorem</p>
@@ -318,7 +324,7 @@
                         <p ><strong>Sign up for Special Offers!</strong></p>
                     </div>
                     <div class="row form-outline form-white mb-4">
-                            <input  id="mail" class="form-control  email-input"  onfocus="if (this.value=='Email') this.value = ''" type="email" value="Email" />
+                            <input  id="mail" class="form-control  email-input"  onfocus="if (this.value=='Mail') this.value = ''" type="email" value="Mail" />
                             <a href="#navbar"><button type="submit" class="btn btn-outline-light subscribe-btn mb-4" >
                                 Subscribe
                             </button></a>
