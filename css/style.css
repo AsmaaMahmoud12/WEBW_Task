@@ -4,6 +4,7 @@
     box-sizing: border-box;
     max-width: 100%;
     max-height: 100%;
+    
 }
 html {
     scroll-behavior: smooth;
@@ -14,6 +15,7 @@ body {
     background-size: 100%;
     max-width: 100%;
     max-height: 100%;
+    display: block;
 }
 
 :root {
@@ -55,7 +57,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .navbar{
@@ -65,7 +66,6 @@ body {
 .navbar-toggler{
     background-color: white;
     position: relative;
-    left: -8rem;
 }
 
 
@@ -79,6 +79,12 @@ body {
     margin-top: 26px;
 }
 
+.navbar-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .about{
     background-image: linear-gradient(to left, #7C1C80, var(--pink));
     margin: 10px;
@@ -90,14 +96,14 @@ body {
     border-radius: 11px;
     display: block;
     font-size: 16px;
-    position: absolute;
-    right: 0;
     width: 178px;
     height: 45px;
 }
 
 .navbar .about{
-    top: 10px;
+    top: 17px;
+    position: absolute;
+    right: 0;
 }
 
 .about:hover {
@@ -129,6 +135,7 @@ body {
 
 .header-text p:nth-child(3) {
     font-size: 18px;
+    line-height: 24px;
     
 }
 
@@ -157,36 +164,46 @@ body {
 .icon-img{
     position: relative;
     left: -21px;
+    max-width: min-content;
 }
 
 .dashboard-text > .icons{
     border: 2px solid var(--pink);
 }
 
-.features-text p:nth-child(2) , .dashboard-text p:nth-child(2){
+.features-text p:nth-child(2) , 
+.dashboard-text p:nth-child(2){
     color: var(--grey);
     font-size: 38px;
     max-width: 350px;
+    line-height: 49px;
+    font-weight: 700;
 }
 .dashboard-text p:nth-child(2){
     max-width: 407px;
 }
 
-.features-text p:nth-child(3), .dashboard-text p:nth-child(3){
-    color: var(--light-grey);
-    font-size: 14px;
+.features-text p:nth-child(3), 
+.dashboard-text p:nth-child(3){
     max-width: 476px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8f8f8f;
+    font-weight: 400;
 }
 
 
 
-.features-text p:nth-child(4) ,.dashboard-text p:nth-child(4){
+.features-text p:nth-child(4),
+.dashboard-text p:nth-child(4){
     color: var(--pink);
     font-size: 16px;
+    line-height: 68px;
+    font-weight: 600;
 }
 
-.features-text p img , .dashboard-text p img{
+.features-text p img , 
+.dashboard-text p img{
     padding-left: 40px;
 }
 
@@ -225,8 +242,6 @@ body {
     background-position-x: -50rem;
     background-position-y: -3rem;
     height: 80rem;
-    position: relative;
-    top: -135px;
 }
 .dashboard-bg-img-second{
     background-image: url(../imgs/bg3.svg);
@@ -236,30 +251,38 @@ body {
     background-position-x: 52rem;
     background-position-y: -3rem;
     height: 80rem;
-    position: relative;
-    top: -23rem;;
 }
 
 .advanced-customer{
-    position: relative;
-    top: -25rem;
     text-align: center;
 }
 
 .row1 p {
     font-size: 28px;
     color: var(--light-grey);
+    font-weight: 600;
 }
 
 .row2 p {
     font-size: 60px;
     color: var(--grey);
+    font-weight: 700;
+
 }
 
 .row3 p {
     font-size: 14px;
     color: var(--light-grey);
     line-height: 1.7;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.carousel{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .carousel-item{
@@ -271,6 +294,7 @@ body {
 
 .carousel-indicators{
     padding-bottom: 10px;
+    position: relative;
 }
 
 .carousel-indicators li {
@@ -283,18 +307,19 @@ body {
     background-color: var(--pink);
 }
 
-.acc-proccess .about, .aboutus-info .about{
+.acc-proccess .about, 
+.aboutus-info .about{
     right: auto;
     margin: 0;
 }
 .acc-proccess-text .about{
-    top: auto;
-    position: relative;
     margin-bottom: 20px;
 }
 .acc-proccess-text p:nth-child(1){
     font-size: 38px;
     color: var(--grey);
+    line-height: 49px;
+    font-weight: 700;
 }
 
 .acc-proccess-text p:nth-child(2){
@@ -325,30 +350,32 @@ body {
 .acc-proccess-bullets .col-6:nth-child(2) p:nth-child(1){
     color: var(--grey);;
     font-size: 24px;
+    font-weight: 600;
 }
 
 .acc-proccess-bullets .col-6:nth-child(2) p:nth-child(2){
     color: var(--light-grey);
     font-size: 14px;
     max-width: 420px;
+    line-height: 24px;
+    font-weight: 400;
 }
 .acc-proccess{
-    position: relative;
-    top: -25rem;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 75px;
 }
-.bullets{
-    position: relative;
-    left: 100px;
-}
+
 .info{
     padding-left: 8%;
-    position: relative;
-    bottom: 12rem;
 }
 .head-info{
     font-size: 38px;
     color: var(--grey);;
     margin-bottom: 4rem;
+    line-height: 49px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .price-info{
@@ -358,7 +385,9 @@ body {
 
 .details-info{
     font-size: 20px;
-    color: var(--grey);;
+    color: var(--grey);
+    line-height: 49px;
+    font-weight: 600;
 }
 
 .card {
@@ -366,8 +395,7 @@ body {
     padding: 36px;
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),
                 0 6px 20px 0 rgba(0,0,0,0.19);
-    max-width: 574px;
-    height: 360px;
+    width: 574px;
 }
 
 .card img {
@@ -378,23 +406,23 @@ body {
 }
 
 .aboutus-info .about{
-    top: auto;
-    position: relative;
     margin-bottom: 14px;
 }
 
 .aboutus-info p:nth-child(1){
-    font-size: 38px;
+    font-size: 39px;
     color: var(--grey);
-    min-width: 471px;
+    line-height: 49px;
+    font-weight: 700;
 }
 
 
 .aboutus-info p:nth-child(2){
     font-size: 14px;
     color: var(--light-grey);
-    min-width: 476px;
-    line-height: 1.7;
+    line-height: 24px;
+    font-weight: 400;
+    width: 475px;
 }
 
 .card-body p:nth-child(1){
@@ -435,6 +463,7 @@ body {
     right: -5.1rem;
     background-color: var(--pink);;
     border-radius: 25px;
+    font-weight: 600;
 }
 
 .email-input{
@@ -442,6 +471,7 @@ body {
     border-radius: 25px;
     width: 280px;
     padding-right: 95px;
+    font-weight: 600;
 }
 
 .footer-logo{
@@ -464,31 +494,30 @@ body {
     flex-direction: column;
 }
 
-.footer-row .col-md-3:nth-child(2) , .footer-row .col-md-3:nth-child(3){
-        padding-top: 2.3rem;
+.footer-row .col-md-3:nth-child(2), 
+.footer-row .col-md-3:nth-child(3){
+    padding-top: 2.3rem;
 }
 
 .footer-row .col-md-3 .row:nth-child(2) p{
     width: 282px;
-    height: 130px;
+    line-height: 28px;
+    font-weight: 600;
 }
 
 .footer-row .col-md-3:nth-child(2) .row:nth-child(2) p{
     width: 174px;
-    height: 142px;
     font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
 }
 
 
-.footer-row .col-md-3:nth-child(2) .row:nth-child(1) p strong{
-    font-size: 16px;
-}
-
+.footer-row .col-md-3:nth-child(2) .row:nth-child(1) p strong,
 .footer-row .col-md-3:nth-child(3) .row:nth-child(1) p strong{
     font-size: 16px;
-    min-width: 212px;
+    line-height: 25px;
 }
-
 
 
 @media screen and (max-width:1200px) {
@@ -509,9 +538,6 @@ body {
         font-size: 21px
     }
     .navbar-toggler{
-        position: relative;
-        left: -15rem;
-        top: 1rem;
         border: 1px solid white;
         box-shadow: 0 0 7px #eee;
         height: 45px;
@@ -525,8 +551,8 @@ body {
     .email-input {
         padding-right: 38px;
     }
-}
 
+}
 
 @media screen and (max-width:992px) {
     .bullets{
@@ -546,7 +572,6 @@ body {
     }
     .dashboard-container{
         top: 122px;
-
     }
     .acc-proccess-bullets .col-6:nth-child(2) p:nth-child(2) {
         min-width: 12rem;
@@ -560,11 +585,15 @@ body {
     .email-input {
         padding-right: 120px;
     }
+    .about{
+        margin-top: 4px;
+        margin-left: 25px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .subscribe-btn{
-        top: 5.35rem;
+        top: 5.45rem;
     }
     .header-text p:nth-child(2){
         font-size: 15px
@@ -572,41 +601,157 @@ body {
     .navbar-toggler{
         top: 11px;
     }
-    .about{
-        top: 10px;
-    }
     .bullets{
         left: 1rem;
+    }
+    .dashboard-container,
+    .dashboard-left-container {
+        position: inherit;
+    }
+    .dashboard-bg-img-first, 
+    .dashboard-bg-img-second {
+        min-width: 61%;
+        max-width: fit-content;
+        height: auto;
+    }
+    .dashboard-text, 
+    .features-text{
+        left: 11px;
     }
     
 }
 
 @media screen and (max-width: 450px) {
+    .header-bg-img {
+        background-position: unset;
+        min-width: fit-content;
+    }    
+    .header-text a{
+        max-width: -webkit-fill-available;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .features-text p:nth-child(3), .dashboard-text p:nth-child(3){
+        line-height: normal;
+    }
     .navbar .logo:nth-child(1) {
         font-size: 37px;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
     }
     .navbar .about{
         width: 130px;
-    }
-    .navbar-toggler{
-        left: -10rem;
-        top: 13px;
+        margin-top: -3px;
+        float: initial;
+        max-width: -webkit-fill-available;
+        margin: -5px 8px;
+        padding: 10px 0;
+        position: relative;
+        float: right;
     }
     .vertical-line{
         margin: 96% 51px;
+        height: -webkit-fill-available;
     }
-    .acc-proccess-bullets .col-6:nth-child(2) p:nth-child(2) {
-        min-width: 12rem;
+    .acc-proccess-bullets{
+        min-width: min-content;
     }
     .market_research{
         left: -3rem;
     }
-    .aboutus-info p:nth-child(2) , .aboutus-info p:nth-child(1){
+    .aboutus-info p:nth-child(2), 
+    .aboutus-info p:nth-child(1){
         min-width: 50%;
     }
     .logo > img{
         min-width: 25px;
         min-height: 40px;
         margin-top: -7px;
+    }
+    .about{
+        float: right;
+        max-width: min-content;
+    }
+    .aboutus{
+        display: flex;
+        justify-content: center;
+    }
+    .subscribe-btn{
+        position: relative;
+        top: 0;
+        left: 0;
+        min-width: max-content;
+        height: 47px;
+    }
+    .form-outline {
+        min-width: -webkit-fill-available; 
+    }
+    .email-input {
+        padding-right: 0;
+    }
+    .header-text {
+        padding-top: 33px;
+    }
+    .header-text p {
+        font-size: 20px;
+    }
+    .header-text p:nth-child(2), 
+    .header-text p:nth-child(3) {
+        font-size: 14px;
+    }
+    .features-text p:nth-child(2),
+    .dashboard-text p:nth-child(2),
+    .acc-proccess-text p:nth-child(1)  {
+        font-size: x-large;
+    }
+    .row2 p {
+        font-size: xx-large;
+    }
+    .row3 p{
+        text-align: left;
+        left: -11px;
+    }
+    .aboutus-info .about, 
+    .acc-proccess-text .about {
+        padding: 0px 10px;
+        display: flex;
+        max-width: max-content;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        
+    }
+    .acc-proccess-text,
+    .aboutus-info{
+        left: -11px;
+    }
+    .bullets{
+        left: 0;
+        padding-right: 27px;
+    }
+    .icons {
+        max-width: initial;
+    }
+    .prices-container{
+        max-width: fit-content;
+    }
+    .card-body{
+        padding-right: inherit;
+    }
+
+    .market-text{
+        left: -24px;
+    }
+    .advanced-customer {
+        text-align: left;
+        padding-left: 7%;
+    }
+
+    .features-text p:nth-child(4), 
+    .dashboard-text p:nth-child(4) {
+        line-height:normal;
     }
 }
